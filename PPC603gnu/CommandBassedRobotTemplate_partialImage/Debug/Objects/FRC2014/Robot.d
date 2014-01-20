@@ -394,6 +394,7 @@ CommandBassedRobotTemplate_partialImage/Debug/Objects/FRC2014/Robot.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
   C:/WindRiver/workspace/FRC2014/Subsystems/Feeder.h \
+  C:/WindRiver/workspace/FRC2014/Subsystems/Launcher.h \
   C:/WindRiver/workspace/FRC2014/OI.h
 
 C:/WindRiver/workspace/FRC2014/Robot.h:
@@ -1183,5 +1184,7 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 
 C:/WindRiver/workspace/FRC2014/Subsystems/Feeder.h:
+
+C:/WindRiver/workspace/FRC2014/Subsystems/Launcher.h:
 
 C:/WindRiver/workspace/FRC2014/OI.h:
