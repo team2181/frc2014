@@ -33,3 +33,7 @@ void Feeder::FeederReset() {
 	speedControllerFeeder->Set(0,0);
 	Wait(0.005);
 }
+void Feeder::Reverse() {
+	speedControllerFeeder->Set(0.4,0);
+	Wait(0.005);
+}

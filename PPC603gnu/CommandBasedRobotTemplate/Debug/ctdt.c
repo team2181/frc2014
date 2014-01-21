@@ -15,6 +15,8 @@ void _GLOBAL__I__ZN10FeederIdleC2Ev();
 
 void _GLOBAL__I__ZN10FeederPullC2Ev();
 
+void _GLOBAL__I__ZN10FeederPushC2Ev();
+
 void _GLOBAL__I__ZN12LauncherDownC2Ev();
 
 void _GLOBAL__I__ZN12LauncherIdleC2Ev();
@@ -92,6 +94,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN17DriveTrainCommandC2Ev,
     _GLOBAL__I__ZN10FeederIdleC2Ev,
     _GLOBAL__I__ZN10FeederPullC2Ev,
+    _GLOBAL__I__ZN10FeederPushC2Ev,
     _GLOBAL__I__ZN12LauncherDownC2Ev,
     _GLOBAL__I__ZN12LauncherIdleC2Ev,
     _GLOBAL__I__ZN15LauncherTriggerC2Ev,
@@ -137,6 +140,8 @@ void _GLOBAL__D__ZN17DriveTrainCommandC2Ev();
 void _GLOBAL__D__ZN10FeederIdleC2Ev();
 
 void _GLOBAL__D__ZN10FeederPullC2Ev();
+
+void _GLOBAL__D__ZN10FeederPushC2Ev();
 
 void _GLOBAL__D__ZN12LauncherDownC2Ev();
 
@@ -205,6 +210,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN17DriveTrainCommandC2Ev,
     _GLOBAL__D__ZN10FeederIdleC2Ev,
     _GLOBAL__D__ZN10FeederPullC2Ev,
+    _GLOBAL__D__ZN10FeederPushC2Ev,
     _GLOBAL__D__ZN12LauncherDownC2Ev,
     _GLOBAL__D__ZN12LauncherIdleC2Ev,
     _GLOBAL__D__ZN15LauncherTriggerC2Ev,

@@ -28,5 +28,6 @@ public:
 	void InitDefaultCommand();
 	void Feed();
 	void FeederReset();
+	void Reverse();
 };
 #endif

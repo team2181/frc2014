@@ -28,15 +28,13 @@ void Launcher::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 void Launcher::reset() {
-	if (launcherDown->Get() == false) {
+	while (launcherDown->Get() == false) {
 		speedControllerLauncher->Set(-1,0);
+		Wait(0.005);
 	}
-	else {
-		speedControllerLauncher->Set(0,0);
-	}
+	speedControllerLauncher->Set(0,0);
 	Wait(0.005);
 }
-
 void Launcher::launch() {
 	while (launcherUp->Get() == false) {
 		speedControllerLauncher->Set(1,0);
@@ -45,7 +43,6 @@ void Launcher::launch() {
 	speedControllerLauncher->Set(0,0);
 	Wait(0.005);
 }
-
 void Launcher::stop() {
-	
+	speedControllerLauncher->Set(0,0);
 }

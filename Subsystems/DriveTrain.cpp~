@@ -33,9 +33,9 @@ void DriveTrain::InitDefaultCommand() {
 // here. Call these from Commands.
 void DriveTrain::drive (Joystick *joystick){
 	float calcX, calcY, calcZ;
-	calcX=pow(joystick->GetX(),3);
-	calcY=pow(joystick->GetY(),3);
-	calcZ=pow(joystick->GetZ(),3);
+	calcX = pow(joystick->GetX(),3);
+	calcY = pow(joystick->GetY(),3);
+	calcZ = (joystick->GetZ()/2);
 	SmartDashboard::PutNumber("Calculated X", (double)(calcX));
 	SmartDashboard::PutNumber("Calculated Y", (double)(calcY));
 	SmartDashboard::PutNumber("Calculated Z", (double)(calcZ));

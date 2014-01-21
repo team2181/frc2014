@@ -402,6 +402,7 @@ CommandBasedRobotTemplate/Debug/Objects/FRC2014/OI.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederIdle.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederPull.h \
+  C:/WindRiver/workspace/FRC2014/Commands/FeederPush.h \
   C:/WindRiver/workspace/FRC2014/Commands/LauncherDown.h \
   C:/WindRiver/workspace/FRC2014/Commands/LauncherIdle.h \
   C:/WindRiver/workspace/FRC2014/Commands/LauncherTrigger.h
@@ -1209,6 +1210,8 @@ C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h:
 C:/WindRiver/workspace/FRC2014/Commands/FeederIdle.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/FeederPull.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/FeederPush.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/LauncherDown.h:
 
