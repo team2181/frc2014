@@ -27,7 +27,7 @@ OI::OI() {
 	feederReverse = new JoystickButton(joystickMain, 8);
 	feederReverse->WhileHeld(new FeederPush());
 	launcherReset = new JoystickButton(joystickMain, 7);
-	launcherReset->WhileHeld(new LauncherDown());
+	launcherReset->WhenPressed(new LauncherDown());
 	launch = new JoystickButton(joystickMain, 5);
 	launch->WhenPressed(new LauncherTrigger());
 	feed = new JoystickButton(joystickMain, 6);

@@ -45,7 +45,7 @@ void RobotMap::init() {
 	feederSpeedControllerFeeder = new Talon(1, 5);
 	lw->AddActuator("Feeder", "SpeedControllerFeeder", (Talon*) feederSpeedControllerFeeder);
 	
-	launcherSpeedControllerLauncher = new Talon(1, 6);
+	launcherSpeedControllerLauncher = new Talon(1, 9);
 	lw->AddActuator("Launcher", "SpeedControllerLauncher", (Talon*) launcherSpeedControllerLauncher);
 	
 	launcherlimitLauncherDown = new DigitalInput(1, 1);

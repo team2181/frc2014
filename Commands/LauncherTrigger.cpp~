@@ -24,7 +24,7 @@ void LauncherTrigger::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool LauncherTrigger::IsFinished() {
-	return false;
+	return Robot::launcher->limitLauncherUp;
 }
 // Called once after isFinished returns true
 void LauncherTrigger::End() {

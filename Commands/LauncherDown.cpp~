@@ -24,7 +24,7 @@ void LauncherDown::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool LauncherDown::IsFinished() {
-	return Robot::launcher->launcherDown;
+	return Robot::launcher->limitLauncherDown;
 }
 // Called once after isFinished returns true
 void LauncherDown::End() {
