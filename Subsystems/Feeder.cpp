@@ -26,7 +26,7 @@ void Feeder::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 void Feeder::Feed() {
-	speedControllerFeeder->Set(0.4,0);
+	speedControllerFeeder->Set(1,0);
 	Wait(0.005);
 }
 void Feeder::FeederReset() {
@@ -34,6 +34,6 @@ void Feeder::FeederReset() {
 	Wait(0.005);
 }
 void Feeder::Reverse() {
-	speedControllerFeeder->Set(0.4,0);
+	speedControllerFeeder->Set(-1,0);
 	Wait(0.005);
 }
