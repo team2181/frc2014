@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef FEEDERIDLE_H
-#define FEEDERIDLE_H
+#ifndef TRIGGERLAUNCHERCOMMAND_H
+#define TRIGGERLAUNCHERCOMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class FeederIdle: public Command {
+class TriggerLauncherCommand: public Command {
 public:
-	FeederIdle();
+	TriggerLauncherCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

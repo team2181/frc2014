@@ -11,17 +11,17 @@ void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__I__ZN17DriveTrainCommandC2Ev();
 
-void _GLOBAL__I__ZN10FeederIdleC2Ev();
+void _GLOBAL__I__ZN17FeederIdleCommandC2Ev();
 
-void _GLOBAL__I__ZN10FeederPullC2Ev();
+void _GLOBAL__I__ZN17FeederPullCommandC2Ev();
 
-void _GLOBAL__I__ZN10FeederPushC2Ev();
+void _GLOBAL__I__ZN17FeederPushCommandC2Ev();
 
-void _GLOBAL__I__ZN12LauncherDownC2Ev();
+void _GLOBAL__I__ZN19LauncherIdleCommandC2Ev();
 
-void _GLOBAL__I__ZN12LauncherIdleC2Ev();
+void _GLOBAL__I__ZN20ResetLauncherCommandC2Ev();
 
-void _GLOBAL__I__ZN15LauncherTriggerC2Ev();
+void _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev();
 
 void _GLOBAL__I__ZN2OIC2Ev();
 
@@ -92,12 +92,12 @@ void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
     _GLOBAL__I__ZN17DriveTrainCommandC2Ev,
-    _GLOBAL__I__ZN10FeederIdleC2Ev,
-    _GLOBAL__I__ZN10FeederPullC2Ev,
-    _GLOBAL__I__ZN10FeederPushC2Ev,
-    _GLOBAL__I__ZN12LauncherDownC2Ev,
-    _GLOBAL__I__ZN12LauncherIdleC2Ev,
-    _GLOBAL__I__ZN15LauncherTriggerC2Ev,
+    _GLOBAL__I__ZN17FeederIdleCommandC2Ev,
+    _GLOBAL__I__ZN17FeederPullCommandC2Ev,
+    _GLOBAL__I__ZN17FeederPushCommandC2Ev,
+    _GLOBAL__I__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__I__ZN20ResetLauncherCommandC2Ev,
+    _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
     _GLOBAL__I__ZN8RobotMap27driveTrainSpeedControllerRRE,
@@ -137,17 +137,17 @@ void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__D__ZN17DriveTrainCommandC2Ev();
 
-void _GLOBAL__D__ZN10FeederIdleC2Ev();
+void _GLOBAL__D__ZN17FeederIdleCommandC2Ev();
 
-void _GLOBAL__D__ZN10FeederPullC2Ev();
+void _GLOBAL__D__ZN17FeederPullCommandC2Ev();
 
-void _GLOBAL__D__ZN10FeederPushC2Ev();
+void _GLOBAL__D__ZN17FeederPushCommandC2Ev();
 
-void _GLOBAL__D__ZN12LauncherDownC2Ev();
+void _GLOBAL__D__ZN19LauncherIdleCommandC2Ev();
 
-void _GLOBAL__D__ZN12LauncherIdleC2Ev();
+void _GLOBAL__D__ZN20ResetLauncherCommandC2Ev();
 
-void _GLOBAL__D__ZN15LauncherTriggerC2Ev();
+void _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev();
 
 void _GLOBAL__D__ZN2OIC2Ev();
 
@@ -208,12 +208,12 @@ void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
     _GLOBAL__D__ZN17DriveTrainCommandC2Ev,
-    _GLOBAL__D__ZN10FeederIdleC2Ev,
-    _GLOBAL__D__ZN10FeederPullC2Ev,
-    _GLOBAL__D__ZN10FeederPushC2Ev,
-    _GLOBAL__D__ZN12LauncherDownC2Ev,
-    _GLOBAL__D__ZN12LauncherIdleC2Ev,
-    _GLOBAL__D__ZN15LauncherTriggerC2Ev,
+    _GLOBAL__D__ZN17FeederIdleCommandC2Ev,
+    _GLOBAL__D__ZN17FeederPullCommandC2Ev,
+    _GLOBAL__D__ZN17FeederPushCommandC2Ev,
+    _GLOBAL__D__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__D__ZN20ResetLauncherCommandC2Ev,
+    _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
     _GLOBAL__D__ZN8RobotMap27driveTrainSpeedControllerRRE,

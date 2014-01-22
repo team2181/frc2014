@@ -400,12 +400,12 @@ CommandBasedRobotTemplate/Debug/Objects/FRC2014/OI.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Launcher.h \
   C:/WindRiver/workspace/FRC2014/Commands/../OI.h \
   C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h \
-  C:/WindRiver/workspace/FRC2014/Commands/FeederIdle.h \
-  C:/WindRiver/workspace/FRC2014/Commands/FeederPull.h \
-  C:/WindRiver/workspace/FRC2014/Commands/FeederPush.h \
-  C:/WindRiver/workspace/FRC2014/Commands/LauncherDown.h \
-  C:/WindRiver/workspace/FRC2014/Commands/LauncherIdle.h \
-  C:/WindRiver/workspace/FRC2014/Commands/LauncherTrigger.h
+  C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/TriggerLauncherCommand.h
 
 C:/WindRiver/workspace/FRC2014/OI.h:
 
@@ -1207,14 +1207,14 @@ C:/WindRiver/workspace/FRC2014/Commands/../OI.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/FeederIdle.h:
+C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/FeederPull.h:
+C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/FeederPush.h:
+C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/LauncherDown.h:
+C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/LauncherIdle.h:
+C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/LauncherTrigger.h:
+C:/WindRiver/workspace/FRC2014/Commands/TriggerLauncherCommand.h:

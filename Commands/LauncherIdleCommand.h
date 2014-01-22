@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef FEEDERPUSH_H
-#define FEEDERPUSH_H
+#ifndef LAUNCHERIDLECOMMAND_H
+#define LAUNCHERIDLECOMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class FeederPush: public Command {
+class LauncherIdleCommand: public Command {
 public:
-	FeederPush();
+	LauncherIdleCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

@@ -8,6 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "DriveTrainCommand.h"
+
+//Driving command, called by DriveTrain by default. 
+//The command is for teleop control.
 DriveTrainCommand::DriveTrainCommand() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);

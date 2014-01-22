@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef LAUNCHERIDLE_H
-#define LAUNCHERIDLE_H
+#ifndef LAUNCHERIDLECOMMAND_H
+#define LAUNCHERIDLECOMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class LauncherIdle: public Command {
+class LauncherIdleCommand: public Command {
 public:
-	LauncherIdle();
+	LauncherIdleCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

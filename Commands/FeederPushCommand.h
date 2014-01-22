@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef LAUNCHERDOWN_H
-#define LAUNCHERDOWN_H
+#ifndef FEEDERPUSHCOMMAND_H
+#define FEEDERPUSHCOMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class LauncherDown: public Command {
+class FeederPushCommand: public Command {
 public:
-	LauncherDown();
+	FeederPushCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
