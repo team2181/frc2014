@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "ResetLauncherCommand.h"
-
 //Called when joyResetLauncher is pushed. Command runs until completion of task.
 //Used to reset the launcher in it's down position after a play object has been launched.
 ResetLauncherCommand::ResetLauncherCommand() {

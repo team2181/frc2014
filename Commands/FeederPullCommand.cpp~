@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "FeederPullCommand.h"
-
 //Command is called when button joyFeederPull is depressed. Runs for as long as the button is held down.
 //Command makes the feeder pull in play objects.
 FeederPullCommand::FeederPullCommand() {
