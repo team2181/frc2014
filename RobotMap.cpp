@@ -15,7 +15,8 @@ SpeedController* RobotMap::driveTrainSpeedControllerRL = NULL;
 SpeedController* RobotMap::driveTrainSpeedControllerFR = NULL;
 SpeedController* RobotMap::driveTrainSpeedControllerFL = NULL;
 RobotDrive* RobotMap::driveTrainOmniDrive = NULL;
-SpeedController* RobotMap::feederSpeedController = NULL;
+SpeedController* RobotMap::feederSpeedControllerLeft = NULL;
+SpeedController* RobotMap::feederSpeedControllerRight = NULL;
 SpeedController* RobotMap::launcherSpeedController = NULL;
 DigitalInput* RobotMap::launcherlimitLauncherDown = NULL;
 DigitalInput* RobotMap::launcherlimitLauncherUp = NULL;
@@ -42,8 +43,11 @@ void RobotMap::init() {
         driveTrainOmniDrive->SetExpiration(0.1);
         driveTrainOmniDrive->SetSensitivity(0.5);
         driveTrainOmniDrive->SetMaxOutput(1.0);
-	feederSpeedController = new Talon(1, 5);
-	lw->AddActuator("Feeder", "SpeedController", (Talon*) feederSpeedController);
+	feederSpeedControllerLeft = new Talon(1, 5);
+	lw->AddActuator("Feeder", "SpeedControllerLeft", (Talon*) feederSpeedControllerLeft);
+	
+	feederSpeedControllerRight = new Talon(1, 6);
+	lw->AddActuator("Feeder", "SpeedControllerRight", (Talon*) feederSpeedControllerRight);
 	
 	launcherSpeedController = new Talon(1, 9);
 	lw->AddActuator("Launcher", "SpeedController", (Talon*) launcherSpeedController);

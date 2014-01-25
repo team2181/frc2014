@@ -24,7 +24,8 @@ public:
 	static SpeedController* driveTrainSpeedControllerFR;
 	static SpeedController* driveTrainSpeedControllerFL;
 	static RobotDrive* driveTrainOmniDrive;
-	static SpeedController* feederSpeedController;
+	static SpeedController* feederSpeedControllerLeft;
+	static SpeedController* feederSpeedControllerRight;
 	static SpeedController* launcherSpeedController;
 	static DigitalInput* launcherlimitLauncherDown;
 	static DigitalInput* launcherlimitLauncherUp;

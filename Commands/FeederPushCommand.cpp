@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "FeederPushCommand.h"
-
 //Called when button joyFeederPush is depressed. Runs for as long as the button is held down.
 //Used to reverse the feeder if something is stuck.
 FeederPushCommand::FeederPushCommand() {

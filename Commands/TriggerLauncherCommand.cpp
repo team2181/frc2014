@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "TriggerLauncherCommand.h"
-
 //Called when joyTriggerLauncher is pushed. Command runs until completion of task.
 //Used to launch a play object after the launcher has been reset and a ball has been loaded.
 TriggerLauncherCommand::TriggerLauncherCommand() {

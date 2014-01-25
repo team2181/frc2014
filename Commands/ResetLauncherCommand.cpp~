@@ -8,6 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "ResetLauncherCommand.h"
+
+//Called when joyResetLauncher is pushed. Command runs until completion of task.
+//Used to reset the launcher in it's down position after a play object has been launched.
 ResetLauncherCommand::ResetLauncherCommand() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
@@ -25,6 +28,8 @@ void ResetLauncherCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ResetLauncherCommand::IsFinished() {
+	//Ends command when the launcher's bottom limit switch is triggered. 
+	//At this point, the launcher should be in its fully downward position.
 	return Robot::launcher->limitLauncherDown;
 }
 // Called once after isFinished returns true

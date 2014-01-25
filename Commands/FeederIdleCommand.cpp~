@@ -8,6 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "FeederIdleCommand.h"
+
+//Called by Feeder as default.
+//Idle command.
 FeederIdleCommand::FeederIdleCommand() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);

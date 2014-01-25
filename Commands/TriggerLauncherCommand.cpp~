@@ -8,6 +8,9 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "TriggerLauncherCommand.h"
+
+//Called when joyTriggerLauncher is pushed. Command runs until completion of task.
+//Used to launch a play object after the launcher has been reset and a ball has been loaded.
 TriggerLauncherCommand::TriggerLauncherCommand() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
@@ -24,6 +27,8 @@ void TriggerLauncherCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool TriggerLauncherCommand::IsFinished() {
+	//Ends command when the launcher's top limit switch is triggered. 
+	//At this point, the launcher should be in its fully upward position.
 	return Robot::launcher->limitLauncherUp;
 }
 // Called once after isFinished returns true
