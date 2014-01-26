@@ -30,7 +30,7 @@ void Feeder::Forward() {
 	Wait(0.005);
 }
 void Feeder::Stop() {
-	speedController->Set(-1,0);
+	speedController->Set(0,0);
 	Wait(0.005);
 }
 void Feeder::Reverse() {
