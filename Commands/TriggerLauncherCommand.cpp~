@@ -28,7 +28,7 @@ void TriggerLauncherCommand::Execute() {
 bool TriggerLauncherCommand::IsFinished() {
 	//Ends command when the launcher's top limit switch is triggered. 
 	//At this point, the launcher should be in its fully upward position.
-	return Robot::launcher->limitLauncherUp;
+	return Robot::launcher->limitLauncherUp->Get();
 }
 // Called once after isFinished returns true
 void TriggerLauncherCommand::End() {
