@@ -33,5 +33,6 @@ public:
 	void Reverse();
 	void Down();
 	void Passing();
+	double GetDistanceConst();
 };
 #endif
