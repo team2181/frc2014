@@ -21,6 +21,8 @@ void _GLOBAL__I__ZN17FeederPushCommandC2Ev();
 
 void _GLOBAL__I__ZN19LauncherIdleCommandC2Ev();
 
+void _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev();
+
 void _GLOBAL__I__ZN20ResetLauncherCommandC2Ev();
 
 void _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev();
@@ -36,6 +38,8 @@ void _GLOBAL__I__ZN10DriveTrainC2Ev();
 void _GLOBAL__I__ZN6FeederC2Ev();
 
 void _GLOBAL__I__ZN8LauncherC2Ev();
+
+void _GLOBAL__I__ZN9PneumaticC2Ev();
 
 void _GLOBAL__I__ZN12PrintCommandC2EPKc();
 
@@ -99,6 +103,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN17FeederPullCommandC2Ev,
     _GLOBAL__I__ZN17FeederPushCommandC2Ev,
     _GLOBAL__I__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev,
     _GLOBAL__I__ZN20ResetLauncherCommandC2Ev,
     _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
@@ -107,6 +112,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN10DriveTrainC2Ev,
     _GLOBAL__I__ZN6FeederC2Ev,
     _GLOBAL__I__ZN8LauncherC2Ev,
+    _GLOBAL__I__ZN9PneumaticC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
     _GLOBAL__I__ZN9Scheduler9_instanceE,
     _GLOBAL__I__ZN11WaitCommandC2Ed,
@@ -150,6 +156,8 @@ void _GLOBAL__D__ZN17FeederPushCommandC2Ev();
 
 void _GLOBAL__D__ZN19LauncherIdleCommandC2Ev();
 
+void _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev();
+
 void _GLOBAL__D__ZN20ResetLauncherCommandC2Ev();
 
 void _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev();
@@ -165,6 +173,8 @@ void _GLOBAL__D__ZN10DriveTrainC2Ev();
 void _GLOBAL__D__ZN6FeederC2Ev();
 
 void _GLOBAL__D__ZN8LauncherC2Ev();
+
+void _GLOBAL__D__ZN9PneumaticC2Ev();
 
 void _GLOBAL__D__ZN9Scheduler9_instanceE();
 
@@ -218,6 +228,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN17FeederPullCommandC2Ev,
     _GLOBAL__D__ZN17FeederPushCommandC2Ev,
     _GLOBAL__D__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev,
     _GLOBAL__D__ZN20ResetLauncherCommandC2Ev,
     _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
@@ -226,6 +237,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN10DriveTrainC2Ev,
     _GLOBAL__D__ZN6FeederC2Ev,
     _GLOBAL__D__ZN8LauncherC2Ev,
+    _GLOBAL__D__ZN9PneumaticC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
     _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange,
     _GLOBAL__D__ZN17MotorSafetyHelper12m_headHelperE,

@@ -398,13 +398,14 @@ FRC2014/Debug/Objects/FRC2014/OI.o:  \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Feeder.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Launcher.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Pneumatic.h \
   C:/WindRiver/workspace/FRC2014/Commands/../OI.h \
   C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.h \
-  C:/WindRiver/workspace/FRC2014/Commands/FeederPassingCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/RegulateCompressorCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/TriggerLauncherCommand.h
 
@@ -1204,19 +1205,21 @@ C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Feeder.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Launcher.h:
 
+C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Pneumatic.h:
+
 C:/WindRiver/workspace/FRC2014/Commands/../OI.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/FeederPassingCommand.h:
-
 C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/RegulateCompressorCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.h:
 

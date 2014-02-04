@@ -25,7 +25,7 @@ void FeederPassingCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool FeederPassingCommand::IsFinished() {
-	return Robot::feeder->limitPassing->Get();
+	return Robot::feeder->ultrasonic->GetRangeMM() <= Robot::feeder->GetDistanceConst();
 }
 // Called once after isFinished returns true
 void FeederPassingCommand::End() {
