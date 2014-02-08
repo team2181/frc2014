@@ -41,7 +41,7 @@ void _GLOBAL__I__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__I__ZN6FeederC2Ev();
 
-void _GLOBAL__I__ZN14FeederSoleniodC2Ev();
+void _GLOBAL__I__ZN14FeederSolenoidC2Ev();
 
 void _GLOBAL__I__ZN8LauncherC2Ev();
 
@@ -119,7 +119,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN8RobotMap27driveTrainSpeedControllerRRE,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
     _GLOBAL__I__ZN6FeederC2Ev,
-    _GLOBAL__I__ZN14FeederSoleniodC2Ev,
+    _GLOBAL__I__ZN14FeederSolenoidC2Ev,
     _GLOBAL__I__ZN8LauncherC2Ev,
     _GLOBAL__I__ZN9PneumaticC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
@@ -185,7 +185,7 @@ void _GLOBAL__D__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__D__ZN6FeederC2Ev();
 
-void _GLOBAL__D__ZN14FeederSoleniodC2Ev();
+void _GLOBAL__D__ZN14FeederSolenoidC2Ev();
 
 void _GLOBAL__D__ZN8LauncherC2Ev();
 
@@ -253,7 +253,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN8RobotMap27driveTrainSpeedControllerRRE,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
     _GLOBAL__D__ZN6FeederC2Ev,
-    _GLOBAL__D__ZN14FeederSoleniodC2Ev,
+    _GLOBAL__D__ZN14FeederSolenoidC2Ev,
     _GLOBAL__D__ZN8LauncherC2Ev,
     _GLOBAL__D__ZN9PneumaticC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
