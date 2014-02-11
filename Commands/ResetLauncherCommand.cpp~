@@ -29,7 +29,7 @@ void ResetLauncherCommand::Execute() {
 bool ResetLauncherCommand::IsFinished() {
 	//Ends command when the launcher's bottom limit switch is triggered. 
 	//At this point, the launcher should be in its fully downward position.
-	return Robot::launcher->limitLauncherDown->Get();
+	return true;
 }
 // Called once after isFinished returns true
 void ResetLauncherCommand::End() {

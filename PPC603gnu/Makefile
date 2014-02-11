@@ -157,7 +157,15 @@ FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o : $(PRJ
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.o : $(PRJ_ROOT_DIR)/Commands/ResetEncoder.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/ResetLauncherCommand.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.o : $(PRJ_ROOT_DIR)/Commands/SetPID.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -207,7 +215,9 @@ OBJECTS_FRC2014 = FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/OI.o \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Robot.o \
@@ -301,7 +311,15 @@ FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorComm
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.o : $(PRJ_ROOT_DIR)/Commands/ResetEncoder.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/ResetLauncherCommand.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.o : $(PRJ_ROOT_DIR)/Commands/SetPID.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -351,7 +369,9 @@ OBJECTS_FRC2014_partialImage = FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/OI.o \
 	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Robot.o \
@@ -377,17 +397,18 @@ force :
 DEP_FILES := FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.d \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.d \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.d \
-	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.d \
-	 FRC2014/$(MODE_DIR)/Objects/FRC2014/OI.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Robot.d FRC2014/$(MODE_DIR)/Objects/FRC2014/RobotMap.d \
-	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.d \
-	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/OI.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Robot.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/RobotMap.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.d \
-	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.d
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.d \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/OI.d \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Robot.d FRC2014/$(MODE_DIR)/Objects/FRC2014/RobotMap.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.d \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.d \
+	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetEncoder.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/SetPID.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/OI.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Robot.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/RobotMap.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.d \
+	 FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.d FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.d
 -include $(DEP_FILES)
 
 

@@ -25,7 +25,7 @@ void FeederPassingCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool FeederPassingCommand::IsFinished() {
-	return Robot::feeder->ultrasonicVolts->GetVoltage() <= Robot::feeder->GetVoltageConst();
+	return Robot::feeder->limitSwitch->Get();
 }
 // Called once after isFinished returns true
 void FeederPassingCommand::End() {

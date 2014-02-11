@@ -25,10 +25,7 @@ public:
 	static SpeedController* driveTrainSpeedControllerFL;
 	static RobotDrive* driveTrainOmniDrive;
 	static SpeedController* feederSpeedController;
-	static Ultrasonic* feederUltrasonic;
-	static AnalogChannel* feederUltrasonicVolts;
-	static DigitalInput* launcherlimitLauncherDown;
-	static DigitalInput* launcherlimitLauncherUp;
+	static DigitalInput* feederLimitSwitch;
 	static SpeedController* launcherSpeedController;
 	static Encoder* launcherPositionEncoder;
 	static PIDController* launcherLauncherPID;
