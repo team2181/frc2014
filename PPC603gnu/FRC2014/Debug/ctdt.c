@@ -27,11 +27,7 @@ void _GLOBAL__I__ZN19LauncherIdleCommandC2Ev();
 
 void _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev();
 
-void _GLOBAL__I__ZN12ResetEncoderC2Ev();
-
 void _GLOBAL__I__ZN20ResetLauncherCommandC2Ev();
-
-void _GLOBAL__I__ZN6SetPIDC2Ev();
 
 void _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev();
 
@@ -116,9 +112,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN25FeederSolenoidIdleCommandC2Ev,
     _GLOBAL__I__ZN19LauncherIdleCommandC2Ev,
     _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev,
-    _GLOBAL__I__ZN12ResetEncoderC2Ev,
     _GLOBAL__I__ZN20ResetLauncherCommandC2Ev,
-    _GLOBAL__I__ZN6SetPIDC2Ev,
     _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
@@ -177,11 +171,7 @@ void _GLOBAL__D__ZN19LauncherIdleCommandC2Ev();
 
 void _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev();
 
-void _GLOBAL__D__ZN12ResetEncoderC2Ev();
-
 void _GLOBAL__D__ZN20ResetLauncherCommandC2Ev();
-
-void _GLOBAL__D__ZN6SetPIDC2Ev();
 
 void _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev();
 
@@ -256,9 +246,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN25FeederSolenoidIdleCommandC2Ev,
     _GLOBAL__D__ZN19LauncherIdleCommandC2Ev,
     _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev,
-    _GLOBAL__D__ZN12ResetEncoderC2Ev,
     _GLOBAL__D__ZN20ResetLauncherCommandC2Ev,
-    _GLOBAL__D__ZN6SetPIDC2Ev,
     _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
