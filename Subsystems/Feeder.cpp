@@ -39,12 +39,9 @@ void Feeder::Reverse() {
 	Wait(0.005);
 }
 void Feeder::Passing() {
-	if (limitSwitch->Get()) {
-		speedController->Set(0,0);
-		
-	}
-	else {
+	while (limitSwitch->Get()){
 		speedController->Set(-0.5,0);
 	}
+	speedController->Set(0,0);
 	//SmartDashboard::PutBoolean("Feeder Limit", limitSwitch->Get());
 }

@@ -26,7 +26,5 @@ void FeederSolenoid::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 void FeederSolenoid::FeederDown() {
-	while(true) {
-		feederDown->Set(true);
-	}
+	feederDown->Set(true);
 }
