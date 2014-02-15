@@ -410,6 +410,7 @@ FRC2014_partialImage/Debug/Objects/FRC2014/OI.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidDownCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidIdleCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/LauncherDefault.h \
   C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/RegulateCompressorCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.h \
@@ -1234,6 +1235,8 @@ C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.h:
 C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidDownCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidIdleCommand.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/LauncherDefault.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.h:
 

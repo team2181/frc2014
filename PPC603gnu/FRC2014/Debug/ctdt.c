@@ -25,6 +25,8 @@ void _GLOBAL__I__ZN25FeederSolenoidDownCommandC2Ev();
 
 void _GLOBAL__I__ZN25FeederSolenoidIdleCommandC2Ev();
 
+void _GLOBAL__I__ZN15LauncherDefaultC2Ev();
+
 void _GLOBAL__I__ZN19LauncherIdleCommandC2Ev();
 
 void _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev();
@@ -113,6 +115,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN17FeederPushCommandC2Ev,
     _GLOBAL__I__ZN25FeederSolenoidDownCommandC2Ev,
     _GLOBAL__I__ZN25FeederSolenoidIdleCommandC2Ev,
+    _GLOBAL__I__ZN15LauncherDefaultC2Ev,
     _GLOBAL__I__ZN19LauncherIdleCommandC2Ev,
     _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev,
     _GLOBAL__I__ZN20ResetLauncherCommandC2Ev,
@@ -171,6 +174,8 @@ void _GLOBAL__D__ZN17FeederPushCommandC2Ev();
 void _GLOBAL__D__ZN25FeederSolenoidDownCommandC2Ev();
 
 void _GLOBAL__D__ZN25FeederSolenoidIdleCommandC2Ev();
+
+void _GLOBAL__D__ZN15LauncherDefaultC2Ev();
 
 void _GLOBAL__D__ZN19LauncherIdleCommandC2Ev();
 
@@ -250,6 +255,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN17FeederPushCommandC2Ev,
     _GLOBAL__D__ZN25FeederSolenoidDownCommandC2Ev,
     _GLOBAL__D__ZN25FeederSolenoidIdleCommandC2Ev,
+    _GLOBAL__D__ZN15LauncherDefaultC2Ev,
     _GLOBAL__D__ZN19LauncherIdleCommandC2Ev,
     _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev,
     _GLOBAL__D__ZN20ResetLauncherCommandC2Ev,
