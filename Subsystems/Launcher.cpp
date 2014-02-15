@@ -42,7 +42,8 @@ void Launcher::Launch() {
 	while (limitLauncherUp->Get()) {
 		speedController->Set(1,0);
 	}
-	speedController->Set(0,0);
+	Wait(0.1);
+	speedController->Set(-0.1,0);
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
