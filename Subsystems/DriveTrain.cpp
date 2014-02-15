@@ -52,7 +52,7 @@ void DriveTrain::drive (Joystick *joystick){
 }
 void DriveTrain::driveforward(bool ison) {
 	if (ison){
-		omniDrive->MecanumDrive_Cartesian(0,1,0);
+		omniDrive->MecanumDrive_Cartesian(0,-0.7,0);
 	}
 	else {
 		omniDrive->MecanumDrive_Cartesian(0,0,0);

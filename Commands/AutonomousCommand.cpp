@@ -23,6 +23,6 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new DriveForwardCommand());
 	AddSequential(new WaitCommand(0.2));
 	AddSequential(new TriggerLauncherCommand());
-	AddSequential(new WaitCommand(1));
+	AddSequential(new WaitCommand(.2));
 	AddSequential(new ResetLauncherCommand());
 }
