@@ -9,6 +9,8 @@
 
 void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
+void _GLOBAL__I__ZN19DriveForwardCommandC2Ev();
+
 void _GLOBAL__I__ZN17DriveTrainCommandC2Ev();
 
 void _GLOBAL__I__ZN17FeederIdleCommandC2Ev();
@@ -103,6 +105,7 @@ extern void (*_ctors[])();
 void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
+    _GLOBAL__I__ZN19DriveForwardCommandC2Ev,
     _GLOBAL__I__ZN17DriveTrainCommandC2Ev,
     _GLOBAL__I__ZN17FeederIdleCommandC2Ev,
     _GLOBAL__I__ZN20FeederPassingCommandC2Ev,
@@ -152,6 +155,8 @@ void (*_ctors[])() =
     };
 
 void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
+
+void _GLOBAL__D__ZN19DriveForwardCommandC2Ev();
 
 void _GLOBAL__D__ZN17DriveTrainCommandC2Ev();
 
@@ -237,6 +242,7 @@ extern void (*_dtors[])();
 void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
+    _GLOBAL__D__ZN19DriveForwardCommandC2Ev,
     _GLOBAL__D__ZN17DriveTrainCommandC2Ev,
     _GLOBAL__D__ZN17FeederIdleCommandC2Ev,
     _GLOBAL__D__ZN20FeederPassingCommandC2Ev,

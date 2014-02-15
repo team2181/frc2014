@@ -395,7 +395,14 @@ FRC2014_partialImage/Debug/Objects/FRC2014/Commands/AutonomousCommand.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/FeederSolenoid.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Launcher.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Pneumatic.h \
-  C:/WindRiver/workspace/FRC2014/Commands/../OI.h
+  C:/WindRiver/workspace/FRC2014/Commands/../OI.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/CommandGroup.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/DriveForwardCommand.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/commands/WaitCommand.h
 
 C:/WindRiver/workspace/FRC2014/Commands/AutonomousCommand.h:
 
@@ -1188,3 +1195,17 @@ C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Launcher.h:
 C:/WindRiver/workspace/FRC2014/Commands/../Subsystems/Pneumatic.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/../OI.h:
+
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/CommandGroup.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/DriveForwardCommand.h:
+
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h:
+
+C:/WindRiver/vxworks-6.3/target/h/WPILib/commands/WaitCommand.h:

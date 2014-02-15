@@ -31,5 +31,6 @@ public:
 	DriveTrain();
 	void InitDefaultCommand();
 	void drive(Joystick *joystick);
+	void driveforward(bool ison);
 };
 #endif
