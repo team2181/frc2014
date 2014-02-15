@@ -19,7 +19,7 @@ ResetLauncherCommand::ResetLauncherCommand() {
 }
 // Called just before this Command runs the first time
 void ResetLauncherCommand::Initialize() {
-	
+	Robot::launcher->speedController->Set(-0.5,0);
 }
 // Called repeatedly when this Command is scheduled to run
 void ResetLauncherCommand::Execute() {
@@ -29,14 +29,14 @@ void ResetLauncherCommand::Execute() {
 bool ResetLauncherCommand::IsFinished() {
 	//Ends command when the launcher's bottom limit switch is triggered. 
 	//At this point, the launcher should be in its fully downward position.
-	return true;
+	return !Robot::launcher->limitLauncherDown->Get();
 }
 // Called once after isFinished returns true
 void ResetLauncherCommand::End() {
-	
+	Robot::launcher->speedController->Set(0,0);
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ResetLauncherCommand::Interrupted() {
-	Robot::launcher->Stop();
+	Robot::launcher->speedController->Set(0,0);
 }
