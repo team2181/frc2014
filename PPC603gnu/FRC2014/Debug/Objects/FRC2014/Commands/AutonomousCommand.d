@@ -402,6 +402,7 @@ FRC2014/Debug/Objects/FRC2014/Commands/AutonomousCommand.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/FeederSolenoidDownCommand.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/commands/WaitCommand.h
 
 C:/WindRiver/workspace/FRC2014/Commands/AutonomousCommand.h:
@@ -1207,5 +1208,7 @@ C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h:
 C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h:
+
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/FeederSolenoidDownCommand.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/commands/WaitCommand.h:
