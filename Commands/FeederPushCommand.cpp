@@ -23,7 +23,7 @@ void FeederPushCommand::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void FeederPushCommand::Execute() {
-	Robot::feeder->Reverse();
+	Robot::feeder->setFeederSpeed(1);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool FeederPushCommand::IsFinished() {
@@ -31,10 +31,10 @@ bool FeederPushCommand::IsFinished() {
 }
 // Called once after isFinished returns true
 void FeederPushCommand::End() {
-	Robot::feeder->Stop();
+	Robot::feeder->setFeederSpeed(0);
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void FeederPushCommand::Interrupted() {
-	Robot::feeder->Stop();
+	Robot::feeder->setFeederSpeed(0);
 }

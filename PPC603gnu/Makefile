@@ -31,8 +31,8 @@ else
 MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
-PRJ_ROOT_DIR := C:/WindRiver/workspace/FRC2014
 WS_ROOT_DIR := C:/WindRiver/workspace
+PRJ_ROOT_DIR := $(WS_ROOT_DIR)/FRC2014
 
 
 
@@ -55,6 +55,8 @@ LIBS =
 IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
 
 IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+
+IDE_DEFINES = 
 
 
 
@@ -101,6 +103,7 @@ FRC2014/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduce -fno-builti
 endif
 FRC2014/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
 FRC2014/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+FRC2014/$(MODE_DIR)/% : IDE_DEFINES = 
 FRC2014/$(MODE_DIR)/% : PROJECT_TYPE = DKM
 FRC2014/$(MODE_DIR)/% : DEFINES = 
 FRC2014/$(MODE_DIR)/% : EXPAND_DBG = 0
@@ -114,91 +117,91 @@ FRC2014/$(MODE_DIR)/% : LIBPATH =
 FRC2014/$(MODE_DIR)/% : LIBS = 
 FRC2014/$(MODE_DIR)/% : OBJ_DIR := FRC2014/$(MODE_DIR)
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.o : C:/WindRiver/workspace/FRC2014/Commands/AutonomousCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveForwardCommand.o : C:/WindRiver/workspace/FRC2014/Commands/DriveForwardCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveForwardCommand.o : $(PRJ_ROOT_DIR)/Commands/DriveForwardCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.o : C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.o : $(PRJ_ROOT_DIR)/Commands/DriveTrainCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPassingCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPassingCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPullCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPushCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidDownCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederSolenoidDownCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidIdleCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederSolenoidIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherDefault.o : C:/WindRiver/workspace/FRC2014/Commands/LauncherDefault.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherDefault.o : $(PRJ_ROOT_DIR)/Commands/LauncherDefault.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/LauncherIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o : C:/WindRiver/workspace/FRC2014/Commands/RegulateCompressorCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o : $(PRJ_ROOT_DIR)/Commands/RegulateCompressorCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/ResetLauncherCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o : C:/WindRiver/workspace/FRC2014/Commands/TriggerLauncherCommand.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/TriggerLauncherCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/OI.o : C:/WindRiver/workspace/FRC2014/OI.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Robot.o : C:/WindRiver/workspace/FRC2014/Robot.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/RobotMap.o : C:/WindRiver/workspace/FRC2014/RobotMap.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.o : C:/WindRiver/workspace/FRC2014/Subsystems/DriveTrain.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.o : $(PRJ_ROOT_DIR)/Subsystems/DriveTrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.o : C:/WindRiver/workspace/FRC2014/Subsystems/Feeder.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.o : $(PRJ_ROOT_DIR)/Subsystems/Feeder.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.o : C:/WindRiver/workspace/FRC2014/Subsystems/FeederSolenoid.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.o : $(PRJ_ROOT_DIR)/Subsystems/FeederSolenoid.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.o : C:/WindRiver/workspace/FRC2014/Subsystems/Launcher.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.o : $(PRJ_ROOT_DIR)/Subsystems/Launcher.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.o : C:/WindRiver/workspace/FRC2014/Subsystems/Pneumatic.cpp
+FRC2014/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.o : $(PRJ_ROOT_DIR)/Subsystems/Pneumatic.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -254,6 +257,7 @@ FRC2014_partialImage/$(MODE_DIR)/% : DEBUGFLAGS_Assembler = -O2 -fstrength-reduc
 endif
 FRC2014_partialImage/$(MODE_DIR)/% : IDE_INCLUDES = -I$(WIND_BASE)/target/h -I$(WIND_BASE)/target/h/WPILib -I$(WIND_BASE)/target/h/wrn/coreip 
 FRC2014_partialImage/$(MODE_DIR)/% : IDE_LIBRARIES = $(WIND_BASE)/target/lib/WPILib.a 
+FRC2014_partialImage/$(MODE_DIR)/% : IDE_DEFINES = 
 FRC2014_partialImage/$(MODE_DIR)/% : PROJECT_TYPE = DKM
 FRC2014_partialImage/$(MODE_DIR)/% : DEFINES = 
 FRC2014_partialImage/$(MODE_DIR)/% : EXPAND_DBG = 0
@@ -267,91 +271,91 @@ FRC2014_partialImage/$(MODE_DIR)/% : LIBPATH =
 FRC2014_partialImage/$(MODE_DIR)/% : LIBS = 
 FRC2014_partialImage/$(MODE_DIR)/% : OBJ_DIR := FRC2014_partialImage/$(MODE_DIR)
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.o : C:/WindRiver/workspace/FRC2014/Commands/AutonomousCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.o : $(PRJ_ROOT_DIR)/Commands/AutonomousCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveForwardCommand.o : C:/WindRiver/workspace/FRC2014/Commands/DriveForwardCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveForwardCommand.o : $(PRJ_ROOT_DIR)/Commands/DriveForwardCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.o : C:/WindRiver/workspace/FRC2014/Commands/DriveTrainCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.o : $(PRJ_ROOT_DIR)/Commands/DriveTrainCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederIdleCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPassingCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPassingCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPullCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPullCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederPushCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPushCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederPushCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidDownCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidDownCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederSolenoidDownCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/FeederSolenoidIdleCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/FeederSolenoidIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/FeederSolenoidIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherDefault.o : C:/WindRiver/workspace/FRC2014/Commands/LauncherDefault.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherDefault.o : $(PRJ_ROOT_DIR)/Commands/LauncherDefault.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o : C:/WindRiver/workspace/FRC2014/Commands/LauncherIdleCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/LauncherIdleCommand.o : $(PRJ_ROOT_DIR)/Commands/LauncherIdleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o : C:/WindRiver/workspace/FRC2014/Commands/RegulateCompressorCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/RegulateCompressorCommand.o : $(PRJ_ROOT_DIR)/Commands/RegulateCompressorCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : C:/WindRiver/workspace/FRC2014/Commands/ResetLauncherCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/ResetLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/ResetLauncherCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o : C:/WindRiver/workspace/FRC2014/Commands/TriggerLauncherCommand.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Commands/TriggerLauncherCommand.o : $(PRJ_ROOT_DIR)/Commands/TriggerLauncherCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/OI.o : C:/WindRiver/workspace/FRC2014/OI.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/OI.o : $(PRJ_ROOT_DIR)/OI.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Robot.o : C:/WindRiver/workspace/FRC2014/Robot.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Robot.o : $(PRJ_ROOT_DIR)/Robot.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/RobotMap.o : C:/WindRiver/workspace/FRC2014/RobotMap.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/RobotMap.o : $(PRJ_ROOT_DIR)/RobotMap.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.o : C:/WindRiver/workspace/FRC2014/Subsystems/DriveTrain.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/DriveTrain.o : $(PRJ_ROOT_DIR)/Subsystems/DriveTrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.o : C:/WindRiver/workspace/FRC2014/Subsystems/Feeder.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Feeder.o : $(PRJ_ROOT_DIR)/Subsystems/Feeder.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.o : C:/WindRiver/workspace/FRC2014/Subsystems/FeederSolenoid.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/FeederSolenoid.o : $(PRJ_ROOT_DIR)/Subsystems/FeederSolenoid.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.o : C:/WindRiver/workspace/FRC2014/Subsystems/Launcher.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Launcher.o : $(PRJ_ROOT_DIR)/Subsystems/Launcher.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
-FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.o : C:/WindRiver/workspace/FRC2014/Subsystems/Pneumatic.cpp
+FRC2014_partialImage/$(MODE_DIR)/Objects/FRC2014/Subsystems/Pneumatic.o : $(PRJ_ROOT_DIR)/Subsystems/Pneumatic.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -387,6 +391,8 @@ _clean :: FRC2014_partialImage/$(MODE_DIR)/FRC2014_partialImage_clean
 
 FRC2014_partialImage/$(MODE_DIR)/FRC2014_partialImage_clean : 
 	$(TRACE_FLAG)if [ -d "FRC2014_partialImage" ]; then cd "FRC2014_partialImage"; rm -rf $(MODE_DIR); fi
+
+force : 
 
 DEP_FILES := FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/AutonomousCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveForwardCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/DriveTrainCommand.d \
 	 FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederIdleCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPassingCommand.d FRC2014/$(MODE_DIR)/Objects/FRC2014/Commands/FeederPullCommand.d \

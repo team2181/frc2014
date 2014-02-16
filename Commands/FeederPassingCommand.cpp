@@ -18,7 +18,7 @@ FeederPassingCommand::FeederPassingCommand() {
 }
 // Called just before this Command runs the first time
 void FeederPassingCommand::Initialize() {
-	Robot::feeder->speedController->Set(-0.5,0);
+	Robot::feeder->setFeederSpeed(-0.5);
 }
 // Called repeatedly when this Command is scheduled to run
 void FeederPassingCommand::Execute() {
@@ -30,10 +30,10 @@ bool FeederPassingCommand::IsFinished() {
 }
 // Called once after isFinished returns true
 void FeederPassingCommand::End() {
-	Robot::feeder->speedController->Set(0,0);
+	Robot::feeder->setFeederSpeed(0);
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void FeederPassingCommand::Interrupted() {
-	Robot::feeder->speedController->Set(0,0);
+	Robot::feeder->setFeederSpeed(0);
 }

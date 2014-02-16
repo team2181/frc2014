@@ -26,22 +26,7 @@ void Feeder::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-void Feeder::Forward() {
-	speedController->Set(-1,0);
+void Feeder::setFeederSpeed(double s) {
+	speedController->Set(s,0);
 	Wait(0.005);
-}
-void Feeder::Stop() {
-	speedController->Set(0,0);
-	Wait(0.005);
-}
-void Feeder::Reverse() {
-	speedController->Set(0.5,0);
-	Wait(0.005);
-}
-void Feeder::Passing() {
-	while (limitSwitch->Get()){
-		speedController->Set(-0.5,0);
-	}
-	speedController->Set(0,0);
-	//SmartDashboard::PutBoolean("Feeder Limit", limitSwitch->Get());
 }
