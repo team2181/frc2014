@@ -400,8 +400,8 @@ FRC2014_partialImage/Debug/Objects/FRC2014/Commands/AutonomousCommand.o:  \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/DriveForwardCommand.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h \
-  C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h \
-  C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h \
+  C:/WindRiver/workspace/FRC2014/Commands/../Commands/LauncherCycleCommand.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/CommandGroup.h \
   C:/WindRiver/workspace/FRC2014/Commands/../Commands/FeederSolenoidDownCommand.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/commands/WaitCommand.h
 
@@ -1205,9 +1205,9 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/../Commands/../Robot.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/../Commands/TriggerLauncherCommand.h:
+C:/WindRiver/workspace/FRC2014/Commands/../Commands/LauncherCycleCommand.h:
 
-C:/WindRiver/workspace/FRC2014/Commands/../Commands/ResetLauncherCommand.h:
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/CommandGroup.h:
 
 C:/WindRiver/workspace/FRC2014/Commands/../Commands/FeederSolenoidDownCommand.h:
 

@@ -9,26 +9,13 @@
 // it from being updated in th future.
 
 
-#ifndef TRIGGERLAUNCHERCOMMAND_H
-#define TRIGGERLAUNCHERCOMMAND_H
 
+#include "LauncherCycleCommand.h"
+#include "LauncherTriggerCommand.h"
+#include "LauncherResetCommand.h"
+LauncherCycleCommand::LauncherCycleCommand() {
+	AddSequential(new LauncherTriggerCommand());
+	AddSequential(new WaitCommand(.2));
+	AddSequential(new LauncherResetCommand());
+}
 
-#include "Commands/Subsystem.h"
-#include "../Robot.h"
-
-/**
- *
- *
- * @author ExampleAuthor
- */
-class TriggerLauncherCommand: public Command {
-public:
-	TriggerLauncherCommand();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
-};
-
-#endif

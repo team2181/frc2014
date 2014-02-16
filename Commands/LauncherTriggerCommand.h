@@ -9,20 +9,26 @@
 // it from being updated in th future.
 
 
+#ifndef LAUNCHERTRIGGERCOMMAND_H
+#define LAUNCHERTRIGGERCOMMAND_H
 
-#ifndef LAUNCHERDEFAULT_H
-#define LAUNCHERDEFAULT_H
 
-#include "Commands/CommandGroup.h"
+#include "Commands/Subsystem.h"
+#include "../Robot.h"
 
 /**
  *
  *
  * @author ExampleAuthor
  */
-class LauncherDefault: public CommandGroup {
-public:	
-	LauncherDefault();
+class LauncherTriggerCommand: public Command {
+public:
+	LauncherTriggerCommand();
+	virtual void Initialize();
+	virtual void Execute();
+	virtual bool IsFinished();
+	virtual void End();
+	virtual void Interrupted();
 };
 
 #endif

@@ -9,26 +9,20 @@
 // it from being updated in th future.
 
 
-#ifndef RESETLAUNCHERCOMMAND_H
-#define RESETLAUNCHERCOMMAND_H
 
+#ifndef LAUNCHERCYCLECOMMAND_H
+#define LAUNCHERCYCLECOMMAND_H
 
-#include "Commands/Subsystem.h"
-#include "../Robot.h"
+#include "Commands/CommandGroup.h"
 
 /**
  *
  *
  * @author ExampleAuthor
  */
-class ResetLauncherCommand: public Command {
-public:
-	ResetLauncherCommand();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
+class LauncherCycleCommand: public CommandGroup {
+public:	
+	LauncherCycleCommand();
 };
 
 #endif

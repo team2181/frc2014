@@ -9,8 +9,7 @@
 // it from being updated in th future.
 #include "AutonomousCommand.h"
 #include "../Commands/DriveForwardCommand.h"
-#include "../Commands/TriggerLauncherCommand.h"
-#include "../Commands/ResetLauncherCommand.h"
+#include "../Commands/LauncherCycleCommand.h"
 #include "../Commands/FeederSolenoidDownCommand.h"
 #include "WPILib/commands/WaitCommand.h"
 //Autonomous program. Called by competition officers.
@@ -22,7 +21,6 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new FeederSolenoidDownCommand());
 	AddSequential(new DriveForwardCommand());
 	AddSequential(new WaitCommand(0.2));
-	AddSequential(new TriggerLauncherCommand());
-	AddSequential(new WaitCommand(.2));
-	AddSequential(new ResetLauncherCommand());
+	AddSequential(new LauncherCycleCommand());
+
 }

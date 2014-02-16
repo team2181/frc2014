@@ -25,15 +25,15 @@ void _GLOBAL__I__ZN25FeederSolenoidDownCommandC2Ev();
 
 void _GLOBAL__I__ZN25FeederSolenoidIdleCommandC2Ev();
 
-void _GLOBAL__I__ZN15LauncherDefaultC2Ev();
+void _GLOBAL__I__ZN20LauncherCycleCommandC2Ev();
 
 void _GLOBAL__I__ZN19LauncherIdleCommandC2Ev();
 
+void _GLOBAL__I__ZN20LauncherResetCommandC2Ev();
+
+void _GLOBAL__I__ZN22LauncherTriggerCommandC2Ev();
+
 void _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev();
-
-void _GLOBAL__I__ZN20ResetLauncherCommandC2Ev();
-
-void _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev();
 
 void _GLOBAL__I__ZN2OIC2Ev();
 
@@ -115,11 +115,11 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN17FeederPushCommandC2Ev,
     _GLOBAL__I__ZN25FeederSolenoidDownCommandC2Ev,
     _GLOBAL__I__ZN25FeederSolenoidIdleCommandC2Ev,
-    _GLOBAL__I__ZN15LauncherDefaultC2Ev,
+    _GLOBAL__I__ZN20LauncherCycleCommandC2Ev,
     _GLOBAL__I__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__I__ZN20LauncherResetCommandC2Ev,
+    _GLOBAL__I__ZN22LauncherTriggerCommandC2Ev,
     _GLOBAL__I__ZN25RegulateCompressorCommandC2Ev,
-    _GLOBAL__I__ZN20ResetLauncherCommandC2Ev,
-    _GLOBAL__I__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
     _GLOBAL__I__ZN8RobotMap27driveTrainSpeedControllerRRE,
@@ -175,15 +175,15 @@ void _GLOBAL__D__ZN25FeederSolenoidDownCommandC2Ev();
 
 void _GLOBAL__D__ZN25FeederSolenoidIdleCommandC2Ev();
 
-void _GLOBAL__D__ZN15LauncherDefaultC2Ev();
+void _GLOBAL__D__ZN20LauncherCycleCommandC2Ev();
 
 void _GLOBAL__D__ZN19LauncherIdleCommandC2Ev();
 
+void _GLOBAL__D__ZN20LauncherResetCommandC2Ev();
+
+void _GLOBAL__D__ZN22LauncherTriggerCommandC2Ev();
+
 void _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev();
-
-void _GLOBAL__D__ZN20ResetLauncherCommandC2Ev();
-
-void _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev();
 
 void _GLOBAL__D__ZN2OIC2Ev();
 
@@ -255,11 +255,11 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN17FeederPushCommandC2Ev,
     _GLOBAL__D__ZN25FeederSolenoidDownCommandC2Ev,
     _GLOBAL__D__ZN25FeederSolenoidIdleCommandC2Ev,
-    _GLOBAL__D__ZN15LauncherDefaultC2Ev,
+    _GLOBAL__D__ZN20LauncherCycleCommandC2Ev,
     _GLOBAL__D__ZN19LauncherIdleCommandC2Ev,
+    _GLOBAL__D__ZN20LauncherResetCommandC2Ev,
+    _GLOBAL__D__ZN22LauncherTriggerCommandC2Ev,
     _GLOBAL__D__ZN25RegulateCompressorCommandC2Ev,
-    _GLOBAL__D__ZN20ResetLauncherCommandC2Ev,
-    _GLOBAL__D__ZN22TriggerLauncherCommandC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
     _GLOBAL__D__ZN8RobotMap27driveTrainSpeedControllerRRE,

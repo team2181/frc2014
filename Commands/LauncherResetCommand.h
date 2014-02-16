@@ -9,16 +9,26 @@
 // it from being updated in th future.
 
 
+#ifndef LAUNCHERRESETCOMMAND_H
+#define LAUNCHERRESETCOMMAND_H
 
-#include "LauncherDefault.h"
-#include "../Commands/DriveForwardCommand.h"
-#include "../Commands/TriggerLauncherCommand.h"
-#include "../Commands/ResetLauncherCommand.h"
-#include "../Commands/FeederSolenoidDownCommand.h"
-#include "WPILib/commands/WaitCommand.h"
 
-LauncherDefault::LauncherDefault() {
-	AddSequential(new TriggerLauncherCommand());
-	AddSequential(new WaitCommand(.2));
-	AddSequential(new ResetLauncherCommand());
-}
+#include "Commands/Subsystem.h"
+#include "../Robot.h"
+
+/**
+ *
+ *
+ * @author ExampleAuthor
+ */
+class LauncherResetCommand: public Command {
+public:
+	LauncherResetCommand();
+	virtual void Initialize();
+	virtual void Execute();
+	virtual bool IsFinished();
+	virtual void End();
+	virtual void Interrupted();
+};
+
+#endif
