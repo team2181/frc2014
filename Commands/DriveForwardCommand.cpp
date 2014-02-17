@@ -26,7 +26,7 @@ void DriveForwardCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool DriveForwardCommand::IsFinished() {
-	return IsTimedOut();
+	return IsTimedOut() || Robot::launcher->isInDistance();
 }
 // Called once after isFinished returns true
 void DriveForwardCommand::End() {

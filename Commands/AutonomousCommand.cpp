@@ -22,5 +22,4 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new DriveForwardCommand());
 	AddSequential(new WaitCommand(0.2));
 	AddSequential(new LauncherCycleCommand());
-
 }

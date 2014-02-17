@@ -23,7 +23,7 @@ void LauncherIdleCommand::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void LauncherIdleCommand::Execute() {
-	
+	SmartDashboard::PutNumber("Ultrasonic Voltage", Robot::launcher->getUltrasonicVolts());
 }
 // Make this return true when this Command no longer needs to run execute()
 bool LauncherIdleCommand::IsFinished() {
