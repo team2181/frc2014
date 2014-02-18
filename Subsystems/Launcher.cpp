@@ -39,7 +39,8 @@ double Launcher::getUltrasonicVolts() {
 }
 bool Launcher::isInDistance() {
 	SmartDashboard::PutNumber("Ultrasonic Voltage", getUltrasonicVolts());
-	return getUltrasonicVolts() <= THRESHVOLTS;
+	SmartDashboard::PutBoolean( "Below Voltage: ", getUltrasonicVolts() <= SmartDashboard::GetNumber( "Volts Threshold"));
+	return getUltrasonicVolts() <= SmartDashboard::GetNumber( "Volts Threshold");
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.

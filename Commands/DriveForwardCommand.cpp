@@ -18,7 +18,7 @@ DriveForwardCommand::DriveForwardCommand() {
 }
 // Called just before this Command runs the first time
 void DriveForwardCommand::Initialize() {
-	
+	SetTimeout( SmartDashboard::GetNumber( "Timeout Auto"));
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveForwardCommand::Execute() {

@@ -19,16 +19,17 @@ LauncherTriggerCommand::LauncherTriggerCommand() {
 }
 // Called just before this Command runs the first time
 void LauncherTriggerCommand::Initialize() {
+	a = !Robot::launcher->limitSwitchDown->Get();
+	Robot::launcher->setLauncherSpeed(1);
 }
 // Called repeatedly when this Command is scheduled to run
 void LauncherTriggerCommand::Execute() {
-	Robot::launcher->setLauncherSpeed(1);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool LauncherTriggerCommand::IsFinished() {
 	//Ends command when the launcher's top limit switch is triggered. 
 	//At this point, the launcher should be in its fully upward position.
-	return (IsTimedOut()) || (!Robot::launcher->limitSwitchUp->Get());
+	return (IsTimedOut()) || (!Robot::launcher->limitSwitchUp->Get()) || !a;
 }
 // Called once after isFinished returns true
 void LauncherTriggerCommand::End() {
