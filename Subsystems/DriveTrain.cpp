@@ -58,3 +58,19 @@ void DriveTrain::driveforward(bool ison) {
 		omniDrive->MecanumDrive_Cartesian(0,0,0);
 	}
 }
+void DriveTrain::driveleft(bool ison) {
+	if (ison){
+		omniDrive->MecanumDrive_Cartesian(-0.7,0,0);
+	}
+	else {
+		omniDrive->MecanumDrive_Cartesian(0,0,0);
+	}
+}
+void DriveTrain::driveright(bool ison) {
+	if (ison){
+		omniDrive->MecanumDrive_Cartesian(0.7,0,0);
+	}
+	else {
+		omniDrive->MecanumDrive_Cartesian(0,0,0);
+	}
+}

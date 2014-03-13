@@ -32,5 +32,7 @@ public:
 	void InitDefaultCommand();
 	void drive(Joystick *joystick);
 	void driveforward(bool ison);
+	void driveleft(bool ison);
+	void driveright(bool ison);
 };
 #endif

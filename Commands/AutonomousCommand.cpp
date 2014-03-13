@@ -9,6 +9,8 @@
 // it from being updated in th future.
 #include "AutonomousCommand.h"
 #include "../Commands/DriveForwardCommand.h"
+#include "../Commands/DriveLeftToTargetCommand.h"
+#include "../Commands/DriveRightToTargetCommand.h"
 #include "../Commands/LauncherCycleCommand.h"
 #include "../Commands/FeederSolenoidDownCommand.h"
 #include "WPILib/commands/WaitCommand.h"
@@ -22,5 +24,26 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new WaitCommand(2.2));
 	AddSequential(new DriveForwardCommand());
 	AddSequential(new WaitCommand(1.2));
-	AddSequential(new LauncherCycleCommand());
-}
+	if (Robot::camera->getTargetState()) {
+	/*switch (Robot::camera->switchPosition()) {
+		case 0:
+			printf("Switch Determined");
+			AddSequential(new LauncherCycleCommand());
+			break;
+		case 1:
+			AddSequential(new DriveLeftToTargetCommand());
+			AddSequential(new LauncherCycleCommand());
+			break;
+		case 2:
+			AddSequential(new DriveRightToTargetCommand());
+			AddSequential(new LauncherCycleCommand());
+		default:
+			break;
+	}*/
+	}
+	else {
+		AddSequential(new WaitCommand(4.6));
+		AddSequential(new LauncherCycleCommand());
+	}
+	}
+
