@@ -11,8 +11,11 @@
 #include "../Commands/DriveForwardCommand.h"
 #include "../Commands/DriveLeftToTargetCommand.h"
 #include "../Commands/DriveRightToTargetCommand.h"
-#include "../Commands/LauncherCycleCommand.h"
+#include "../Commands/AutonomousLaunchCommand.h"
 #include "../Commands/FeederSolenoidDownCommand.h"
+#include "../Commands/DetectTargetCommand.h"
+#include "../Commands/CameraAimUpCommand.h"
+#include "../Commands/CameraAimDownCommand.h"
 #include "WPILib/commands/WaitCommand.h"
 //Autonomous program. Called by competition officers.
 AutonomousCommand::AutonomousCommand() {
@@ -23,9 +26,20 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new FeederSolenoidDownCommand());
 	AddSequential(new WaitCommand(2.2));
 	AddSequential(new DriveForwardCommand());
-	AddSequential(new WaitCommand(1.2));
+	AddSequential(new CameraAimUpCommand());
+	AddSequential(new DetectTargetCommand());
+	AddSequential(new WaitCommand(0.1));
+	AddSequential(new AutonomousLaunchCommand());
+	AddSequential(new CameraAimDownCommand());
+	/*	NetworkTable *table = NetworkTable::GetTable("datatable");
+	NumberArray apRatioArray;
+	NumberArray areaArray;
+	
+	table->RetrieveValue("AP_RATIO", apRatioArray);
+	table->RetrieveValue("AREA", areaArray);
+	Robot::camera->isHot(areaArray, apRatioArray);
 	if (Robot::camera->getTargetState()) {
-	/*switch (Robot::camera->switchPosition()) {
+	switch (Robot::camera->switchPosition()) {
 		case 0:
 			printf("Switch Determined");
 			AddSequential(new LauncherCycleCommand());
@@ -39,11 +53,11 @@ AutonomousCommand::AutonomousCommand() {
 			AddSequential(new LauncherCycleCommand());
 		default:
 			break;
-	}*/
+	}
 	}
 	else {
-		AddSequential(new WaitCommand(4.6));
+		//AddSequential(new WaitCommand(4.6));
 		AddSequential(new LauncherCycleCommand());
 	}
+	}*/
 	}
-

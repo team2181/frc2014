@@ -54,12 +54,7 @@ void Robot::AutonomousInit() {
 	
 void Robot::AutonomousPeriodic() {
 	Scheduler::GetInstance()->Run();
-	table = NetworkTable::GetTable("datatable");
-	if (table != NULL){
-	table->RetrieveValue("AP_RATIO", apRatioArray);
-	table->RetrieveValue("AREA", areaArray);
-	Robot::camera->setTargetState(camera->isHot(areaArray, apRatioArray));
-	}
+	//Robot::camera->setTargetState(camera->isHot(areaArray, apRatioArray));
 }
 	
 void Robot::TeleopInit() {
