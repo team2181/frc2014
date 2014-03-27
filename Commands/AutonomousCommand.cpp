@@ -26,11 +26,11 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new FeederSolenoidDownCommand());
 	AddSequential(new WaitCommand(2.2));
 	AddSequential(new DriveForwardCommand());
-	AddSequential(new CameraAimUpCommand());
+	//AddSequential(new CameraAimUpCommand());
 	AddSequential(new DetectTargetCommand());
 	AddSequential(new WaitCommand(0.1));
 	AddSequential(new AutonomousLaunchCommand());
-	AddSequential(new CameraAimDownCommand());
+	//AddSequential(new CameraAimDownCommand());
 	/*	NetworkTable *table = NetworkTable::GetTable("datatable");
 	NumberArray apRatioArray;
 	NumberArray areaArray;
