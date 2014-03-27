@@ -32,10 +32,12 @@ void AutonomousLaunchCommand::Initialize() {
 			break;
 		case 1:
 			drvleft->Start();
+			Wait(1.5);
 			com->Start();
 			break;
 		case 2:
 			drvright->Start();
+			Wait(1.5);
 			com->Start();
 		default:
 			break;
