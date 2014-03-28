@@ -28,23 +28,24 @@ void AutonomousLaunchCommand::Initialize() {
 	switch (Robot::camera->switchPosition()) {
 		case 0:
 			printf("Switch Determined");
+			Wait(0.5);
 			com->Start();
 			break;
 		case 1:
 			drvleft->Start();
-			Wait(1.5);
+			Wait(SmartDashboard::GetNumber("Time for left/right"));
 			com->Start();
 			break;
 		case 2:
 			drvright->Start();
-			Wait(1.5);
+			Wait(SmartDashboard::GetNumber("Time for left/right"));
 			com->Start();
 		default:
 			break;
 	}
 	}
 	else {
-		Wait(3);
+		Wait(2.5);
 		com->Start();
 	}
 }
