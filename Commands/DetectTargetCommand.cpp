@@ -22,10 +22,10 @@ void DetectTargetCommand::Initialize() {
 	NumberArray apRatioArray;
 	NumberArray areaArray;
 	calcComplete = false;
-	Wait(0.1);
+	//Wait(0.1);
 	table->RetrieveValue("AP_RATIO", apRatioArray);
 	table->RetrieveValue("AREA", areaArray);
-	Wait(0.1);
+	//Wait(0.1);
 	calcComplete = Robot::camera->isHot(areaArray, apRatioArray);
 }
 // Called repeatedly when this Command is scheduled to run

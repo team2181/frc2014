@@ -9,22 +9,26 @@
 // it from being updated in th future.
 
 
+#ifndef RESTOREEXPOSURECOMMAND_H
+#define RESTOREEXPOSURECOMMAND_H
 
-#ifndef AUTOLAUNCHCOMMAND_H
-#define AUTOLAUNCHCOMMAND_H
 
-#include "Commands/CommandGroup.h"
-#include "../Robot.h"
 #include "Commands/Subsystem.h"
+#include "../Robot.h"
 
 /**
  *
  *
  * @author ExampleAuthor
  */
-class AutoLaunchCommand: public CommandGroup {
-public:	
-	AutoLaunchCommand();
+class RestoreExposureCommand: public Command {
+public:
+	RestoreExposureCommand();
+	virtual void Initialize();
+	virtual void Execute();
+	virtual bool IsFinished();
+	virtual void End();
+	virtual void Interrupted();
 };
 
 #endif

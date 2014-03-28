@@ -31,33 +31,4 @@ AutonomousCommand::AutonomousCommand() {
 	AddSequential(new WaitCommand(0.1));
 	AddSequential(new AutonomousLaunchCommand());
 	//AddSequential(new CameraAimDownCommand());
-	/*	NetworkTable *table = NetworkTable::GetTable("datatable");
-	NumberArray apRatioArray;
-	NumberArray areaArray;
-	
-	table->RetrieveValue("AP_RATIO", apRatioArray);
-	table->RetrieveValue("AREA", areaArray);
-	Robot::camera->isHot(areaArray, apRatioArray);
-	if (Robot::camera->getTargetState()) {
-	switch (Robot::camera->switchPosition()) {
-		case 0:
-			printf("Switch Determined");
-			AddSequential(new LauncherCycleCommand());
-			break;
-		case 1:
-			AddSequential(new DriveLeftToTargetCommand());
-			AddSequential(new LauncherCycleCommand());
-			break;
-		case 2:
-			AddSequential(new DriveRightToTargetCommand());
-			AddSequential(new LauncherCycleCommand());
-		default:
-			break;
-	}
-	}
-	else {
-		//AddSequential(new WaitCommand(4.6));
-		AddSequential(new LauncherCycleCommand());
-	}
-	}*/
 	}
