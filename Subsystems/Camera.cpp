@@ -32,14 +32,14 @@ bool Camera::isHot(NumberArray area, NumberArray ratio) {
 	targetState = false;
 	
 	for(unsigned i=0; i < area.size(); i++){
-		if((area.get(i) < 3500) && (area.get(i) > 1500)) {
+		if((area.get(i) < 500) && (area.get(i) > 440)) {
 			inArea = true;
 			break;
 		}
 	}
 	
 	for(unsigned i=0; i < ratio.size(); i++){
-		if((ratio.get(i) < 10.5) && (ratio.get(i) > 9.0)) {
+		if((ratio.get(i) < 4) && (ratio.get(i) > 3.2)) {
 			inAspect = true;
 			break;
 		}

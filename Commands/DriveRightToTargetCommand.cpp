@@ -18,7 +18,7 @@ DriveRightToTargetCommand::DriveRightToTargetCommand() {
 }
 // Called just before this Command runs the first time
 void DriveRightToTargetCommand::Initialize() {
-	
+	SetTimeout((double)(SmartDashboard::GetNumber("Time for left/right")));
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveRightToTargetCommand::Execute() {
@@ -26,7 +26,7 @@ void DriveRightToTargetCommand::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool DriveRightToTargetCommand::IsFinished() {
-	return false;
+	return IsTimedOut();
 }
 // Called once after isFinished returns true
 void DriveRightToTargetCommand::End() {

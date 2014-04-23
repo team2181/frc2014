@@ -18,7 +18,7 @@ DriveLeftToTargetCommand::DriveLeftToTargetCommand() {
 }
 // Called just before this Command runs the first time
 void DriveLeftToTargetCommand::Initialize() {
-	
+	SetTimeout((double)(SmartDashboard::GetNumber("Time for left/right")));
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveLeftToTargetCommand::Execute() {
