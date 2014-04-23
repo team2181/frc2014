@@ -28,7 +28,7 @@ void AutonomousLaunchCommand::Initialize() {
 	switch (Robot::camera->switchPosition()) {
 		case 0:
 			printf("Switch Determined");
-			Wait(0.5);
+			Wait(0.4);
 			com->Start();
 			break;
 		case 1:
