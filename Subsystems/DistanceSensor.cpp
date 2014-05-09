@@ -27,8 +27,11 @@ void DistanceSensor::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+void DistanceSensor::outputSensorToSD() {
+	SmartDashboard::PutNumber("DistVolt", ultrasonicSensor->GetVoltage());
+}
 void DistanceSensor::setLight() {
-	if (ultrasonicSensor->GetVoltage() >= THRESHOLD){
+	if ((ultrasonicSensor->GetVoltage() >= 2.2) && (ultrasonicSensor->GetVoltage() <=2.6)){
 		inRangeLight->Set(Relay::kOn);
 	}
 	else {

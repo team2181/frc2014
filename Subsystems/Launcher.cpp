@@ -36,7 +36,6 @@ double Launcher::getUltrasonicVolts() {
 	return (double)(distanceSensor->GetVoltage());
 }
 bool Launcher::isInDistance() {
-	SmartDashboard::PutNumber("Ultrasonic Voltage", getUltrasonicVolts());
 	SmartDashboard::PutBoolean( "Below Voltage: ", getUltrasonicVolts() <= SmartDashboard::GetNumber( "Volts Threshold"));
 	return getUltrasonicVolts() <= SmartDashboard::GetNumber( "Volts Threshold");
 }

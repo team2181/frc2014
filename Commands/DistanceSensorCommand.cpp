@@ -22,6 +22,7 @@ void DistanceSensorCommand::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void DistanceSensorCommand::Execute() {
 	Robot::distanceSensor->setLight();
+	Robot::distanceSensor->outputSensorToSD();
 }
 // Make this return true when this Command no longer needs to run execute()
 bool DistanceSensorCommand::IsFinished() {
