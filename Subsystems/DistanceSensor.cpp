@@ -31,7 +31,7 @@ void DistanceSensor::outputSensorToSD() {
 	SmartDashboard::PutNumber("DistVolt", ultrasonicSensor->GetVoltage());
 }
 void DistanceSensor::setLight() {
-	if ((ultrasonicSensor->GetVoltage() >= 2.2) && (ultrasonicSensor->GetVoltage() <=2.6)){
+	if ((ultrasonicSensor->GetVoltage() >= 2.2) && (ultrasonicSensor->GetVoltage() <= 2.6)){
 		inRangeLight->Set(Relay::kOn);
 	}
 	else {
